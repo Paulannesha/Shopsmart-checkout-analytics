@@ -4,7 +4,7 @@ A/B test \& retention analytics for a checkout redesign
 
 
 
-🔗 \*Live interactive app:\* https://shopsmart-checkout-analytics-bxpgt6uadrejrqmaoevzxu.streamlit.app/
+🔗 \*Live interactive app:\* https://shopsmart-checkout-analytics-bxpgt6uadrejrqmaoevzxu.streamlit.app
 
 
 
