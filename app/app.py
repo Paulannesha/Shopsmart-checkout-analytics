@@ -41,3 +41,6 @@ for variant in funnel.index:
                            y=funnel.loc[variant], name=variant))
 fig2.update_layout(barmode="group", yaxis_title="% of Users")
 st.plotly_chart(fig2, use_container_width=True)
+
+st.markdown("--")
+st.write("Built by Annesha Paul | GitHub](https://github.com/Paulannesha) | [LinkedIn](https://www.linkedin.com/in/anneshapaul99)")
