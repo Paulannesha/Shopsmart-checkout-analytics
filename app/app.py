@@ -1,12 +1,17 @@
-import streamlit as st 
+import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import os
 
 st.set_page_config(page_title="ShopSmart Checkout A/B Test", layout="wide")
-st.title("ShopSmart Checkout A/B Test Dashboard")
-st.write("Analysing whether a one-page checkout improves conversion, revenue, and retention.")
 
-df=pd.read_csv("../data/shopsmart_experiment.csv") 
+st.title("ShopSmart Checkout A/B Test Dashboard")
+st.write("Analyzing whether a one-page checkout improves conversion, revenue, and retention.")
+
+BASE_DIR = os.path.dirname(os.path.abspath(_file_))
+df = pd.read_csv(os.path.join(BASE_DIR, "..", "data", "shopsmart_experiment.csv"))
+
+ 
 control= df[df["variant"] == "control"]
 treatment = df[df["variant"] == "treatment"]
 
